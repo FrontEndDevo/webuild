@@ -11,7 +11,7 @@ const Navbar = () => {
       : ""}  hover:text-orange-500 duration-200`;
 
   return (
-    <div className="flex bg-gray-900 justify-between items-center py-3 text-white uppercase fixed w-full px-14">
+    <div className="flex bg-gray-900 justify-between items-center py-4 text-white uppercase sticky top-0 w-full px-14">
       <div className="flex text-5xl gap-2">
         <FontAwesomeIcon icon={faBuilding} className="text-orange-700" />
         <h1 className="">webuild</h1>
