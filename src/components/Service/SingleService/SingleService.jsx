@@ -3,15 +3,22 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const SingleService = (props) => {
   const { image, icon, title, description } = props;
+
   return (
-    <div className="service">
+    <div className="group single-service bg-white">
       <img src={image} alt={title} />
-      <div className="info">
-        <FontAwesomeIcon icon={icon} />
-        <h4>{title}</h4>
-        <p>{description}</p>
-        <button>
-          Read More <FontAwesomeIcon icon={faArrowRight} />
+      <div className="info p-8 flex flex-col gap-4 text-center items-center relative">
+        <div className="bg-white text-5xl text-orange-600 duration-200 group-hover:text-6xl rounded-t-full p-6 absolute -top-12">
+          <FontAwesomeIcon icon={icon} />
+        </div>
+        <h4 className="pt-8 uppercase text-2xl font-bold">{title}</h4>
+        <p className="text-gray-600">
+          rem culpa dolore architecto totam, exercitationem natus vel
+        </p>
+        <button className="uppercase hover:font-bold text-orange-500 before:absolute before:-bottom-1 before:left-0 before:w-0 before:h-1 before:bg-orange-500 before:duration-500 before:ease-out relative before:group-hover:w-full">
+          <span className="relative group ">
+            Read More <FontAwesomeIcon icon={faArrowRight} />
+          </span>
         </button>
       </div>
     </div>
