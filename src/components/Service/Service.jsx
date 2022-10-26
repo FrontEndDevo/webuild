@@ -19,11 +19,11 @@ const Service = () => {
   ));
 
   return (
-    <div>
-      <h2>
-        we provide <span>the best</span>construction services
+    <div className="Service bg-gray-200 p-10">
+      <h2 className="text-center mb-14 text-5xl uppercase font-bold">
+        we provide <span className="text-orange-500">the best </span><br />construction services
       </h2>
-      <div className="services">{allServices}</div>
+      <div className="services grid grid-cols-3 gap-10">{allServices}</div>
     </div>
   );
 };
