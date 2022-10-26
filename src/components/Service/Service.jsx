@@ -1,3 +1,4 @@
+// Import images from Importer helper.
 import {
   firstService,
   secondService,
@@ -6,7 +7,8 @@ import {
   fifthService,
   sixthService,
 } from "./Importer";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+// Import icons from Importer helper.
 import {
   faBuildingUser,
   faHouseChimney,
@@ -14,31 +16,65 @@ import {
   faScrewdriverWrench,
   faPalette,
   faPaintBrush,
-  faArrowRight,
 } from "@fortawesome/free-solid-svg-icons";
+import SingleService from "./SingleService/SingleService";
 
 const Service = () => {
+  // Arrange (images) in an array.
+  const serviceImages = [
+    firstService,
+    secondService,
+    thirdService,
+    fourthService,
+    fifthService,
+    sixthService,
+  ];
+  // Arrange (icons) in an array.
+  const serviceIcons = [
+    faBuildingUser,
+    faHouseChimney,
+    faSitemap,
+    faScrewdriverWrench,
+    faPalette,
+    faPaintBrush,
+  ];
+
+  // Prepare (titles) and store them in an array.
+  const serviceTitles = [
+    "Building Constructions",
+    "House Renovation",
+    "Architecture Design",
+    "Interior Design",
+    "Fixing & Support",
+    "Painting",
+  ];
+
+  // Prepare (descriptions) and store them in an array.
+  const serviceDescriptions = [
+    "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+    "Numquam eius necessitatibus repudiandae nostrum odit iste sed expedita nisi iure,",
+    "rem culpa dolore architecto totam, exercitationem natus vel",
+    "eveniet autem quisquam laborum beatae quam inventore!",
+    "Dolorem repellendus facere nobis debitis non. Officia error minima voluptas",
+    "reiciendis asperiores consequuntur rem unde ipsum ad, libero officiis temporibus accusantium,",
+  ];
+
+  // Start mapping, The main array is the (serviceImages), else will be mapped using (index).
+  const allServices = serviceImages.map((service, index) => (
+    <SingleService
+      image={service}
+      icon={serviceIcons[index]}
+      title={serviceTitles[index]}
+      description={serviceDescriptions[index]}
+    />
+  ));
+
   return (
     <div>
       <h2>
         we provide <span>the best</span>construction services
       </h2>
-      <div className="services">
-        <div className="service">
-          <img src={firstService} alt="" />
-          <div className="info">
-            <FontAwesomeIcon icon={faBuildingUser} />
-            <h4>Building consttuction</h4>
-            <p>
-              Duo dolore et diam sed ipsum stet amet duo diam. Rebum amet ut
-              amet sed erat sed sed amet magna elitr amet kasd diam duo
-            </p>
-            <button>
-              Read More <FontAwesomeIcon icon={faArrowRight} />
-            </button>
-          </div>
-        </div>
-      </div>
+      <div className="services">{allServices}</div>
     </div>
   );
 };
