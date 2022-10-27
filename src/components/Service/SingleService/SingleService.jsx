@@ -15,10 +15,8 @@ const SingleService = (props) => {
         <p className="text-gray-600">
           rem culpa dolore architecto totam, exercitationem natus vel
         </p>
-        <button className="uppercase hover:font-bold text-orange-500 before:absolute before:-bottom-1 before:left-0 before:w-0 before:h-1 before:bg-orange-500 before:duration-500 before:ease-out relative before:group-hover:w-full">
-          <span className="relative group ">
-            Read More <FontAwesomeIcon icon={faArrowRight} />
-          </span>
+        <button className="relative uppercase text-orange-500 before:absolute before:-bottom-1 before:left-1/2 before:w-0 before:h-1 before:bg-orange-500 before:duration-500 before:ease-out before:hover:left-0 before:hover:w-full">
+          Read More <FontAwesomeIcon icon={faArrowRight} />
         </button>
       </div>
     </div>
