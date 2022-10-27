@@ -1,4 +1,20 @@
+import { useState } from "react";
+
 const CallBack = () => {
+  const [date, setDate] = useState("");
+  const [time, setTime] = useState("");
+
+  const focusDateHandler = () => {
+    const date = new Date().toLocaleDateString();
+    setDate(date);
+    // event.target.type = "date";
+  };
+
+  const focusTimeHandler = () => {
+    const time = new Date().toLocaleTimeString();
+    setTime(time);
+  };
+
   return (
     <div className="flex gap-12 my-10 p-12">
       <div className="content w-2/5">
@@ -17,31 +33,39 @@ const CallBack = () => {
           Get a quote
         </button>
       </div>
-      <form className="bg-gray-200 flex flex-col gap-y-4 p-8 w-3/5">
+      <form className="bg-gray-200 flex flex-col gap-y-4 p-8 w-3/5 text-gray-600">
         <div className="main-info grid grid-cols-2 gap-4">
-          <input className="bg-white p-3" type="text" placeholder="Your Name" />
           <input
-            className="bg-white p-3"
+            className="bg-white p-3 duration-200 outline-none focus:outline-4 focus:outline-solid focus:outline-orange-300"
+            type="text"
+            placeholder="Your Name"
+          />
+          <input
+            className="bg-white p-3 duration-200 outline-none focus:outline-4 focus:outline-solid focus:outline-orange-300"
             type="email"
             placeholder="Your Email"
           />
           <input
-            className="bg-white p-3"
+            className="bg-white p-3 duration-200 outline-none focus:outline-4 focus:outline-solid focus:outline-orange-300"
             type="text"
             placeholder="Call Back Date"
+            onFocus={focusDateHandler}
+            value={date}
           />
           <input
-            className="bg-white p-3"
+            className="bg-white p-3 duration-200 outline-none focus:outline-4 focus:outline-solid focus:outline-orange-300"
             type="text"
             placeholder="Call Back Time"
+            onFocus={focusTimeHandler}
+            value={time}
           />
         </div>
         <textarea
-          className="bg-white p-3"
+          className="bg-white p-3 duration-200 outline-none focus:outline-4 focus:outline-solid focus:outline-orange-300"
           placeholder="Message"
           rows="6"
         ></textarea>
-        <button className="uppercase text-white bg-orange-600 py-4 px-14">
+        <button className="uppercase text-white bg-orange-600 py-4 px-14 duration-500 hover:text-black relative before:absolute before:-bottom-1 before:left-1/2 before:w-0 before:h-1 before:bg-black before:duration-500 before:ease-out before:hover:left-1/4 before:hover:w-1/2">
           Submit Request
         </button>
       </form>
