@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 const Workers = () => {
   return (
     <div>
@@ -11,18 +9,7 @@ const Workers = () => {
         </span>
         workers
       </h2>
-      <div className="workers">
-        <div className="worker">
-          <div className="person">
-            <img src="" alt="" />
-            <div className="social"></div>
-          </div>
-          <div className="details">
-            <h3>Adam Philips</h3>
-            <p>CEO & Founder</p>
-          </div>
-        </div>
-      </div>
+      <div className="workers"></div>
     </div>
   );
 };
