@@ -1,6 +1,4 @@
-import header from "../../assets/images/header.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHouseChimney } from "@fortawesome/free-solid-svg-icons";
 const Header = () => {
   return (
     <div>

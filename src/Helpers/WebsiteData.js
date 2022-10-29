@@ -11,6 +11,9 @@ import sixthService from "../assets/images/sixthService.jpg";
 import WorkerOne from "../assets/images/workerone.jpg";
 import WorkerTwo from "../assets/images/workertwo.jpg";
 
+// Header component images:
+import header from "../../assets/images/header.jpg";
+
 // Importing all app icons here ->
 // Service component images:
 import {
@@ -98,3 +101,19 @@ export { workersIcons, allWorkers }; // (((Workers component)))
 
 ///////////////////////////////////////////////////////////////////////
 
+const headerData = [
+  {
+    img: sixthService,
+    icon: faHouseChimney,
+    title_one: "Build your dream",
+    title_two: "house with us",
+    button: "Get a quote",
+  },
+  {
+    img: header,
+    icon: faPalette,
+    title_one: "We are trusted for",
+    title_two: "your project",
+    button: "Contact us",
+  },
+];
