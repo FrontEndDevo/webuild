@@ -1,5 +1,13 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { headerData } from "../../Helpers/WebsiteData";
+import Reveal from "reveal.js";
+import Markdown from "reveal.js/plugin/markdown/markdown.esm.js";
+
+let deck = new Reveal({
+  plugins: [Markdown],
+});
+deck.initialize();
+
 const Header = () => {
   const headerSections = headerData.map((headerObj) => (
     <>
@@ -25,7 +33,17 @@ const Header = () => {
     </>
   ));
 
-  return <div className="header">{headerSections}</div>;
+  return (
+    <div className="header">
+      {/* {headerSections} */}
+      <div class="reveal">
+        <div class="slides">
+          <section>Slide 1</section>
+          <section>Slide 2</section>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Header;
