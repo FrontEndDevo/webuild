@@ -4,18 +4,20 @@ import { headerData, headerArrowIcons } from "../../Helpers/WebsiteData";
 const Header = () => {
   const [slide, setSlide] = useState(0);
 
-  let slideCounter = 0;
+  // let slideCounter = 0;
 
-  useEffect(() => {
-    setSlide(slideCounter);
-  }, [slideCounter]);
+  // useEffect(() => {
+  //   setSlide(slideCounter);
+  // }, [slideCounter]);
 
   const leftArrowHandler = () => {
-    --slideCounter;
+    if (slide >= 0 && slide <= headerData.length)
+      setSlide((prevState) => --prevState);
   };
 
   const rightArrowHandler = () => {
-    ++slideCounter;
+    if (slide >= 0 && slide <= headerData.length)
+      setSlide((prevState) => ++prevState);
   };
 
   return (
