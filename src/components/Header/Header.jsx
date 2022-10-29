@@ -1,16 +1,24 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { headerData, headerArrowIcons } from "../../Helpers/WebsiteData";
-import { useEffect } from "react";
 const Header = () => {
   const [slide, setSlide] = useState(0);
+  const [isShow, setIsShow] = useState(false);
 
   const leftArrowHandler = () => {
     if (slide - 1 >= 0) setSlide((prevState) => --prevState);
+    setIsShow(true);
+    setTimeout(() => {
+      setIsShow(false);
+    }, 500);
   };
 
   const rightArrowHandler = () => {
     if (slide + 1 < headerData.length) setSlide((prevState) => ++prevState);
+    setIsShow(true);
+    setTimeout(() => {
+      setIsShow(false);
+    }, 500);
   };
 
   // To change the content from time to time.
@@ -35,18 +43,19 @@ const Header = () => {
         />
         <span className="absolute w-full h-full bg-gray-900 opacity-80 top-0 left-0 z-10"></span>
       </div>
-
-      <div className="content absolute top-1/3 left-1/3 z-20 flex flex-col items-center gap-8">
-        <FontAwesomeIcon
-          icon={headerData[slide].icon}
-          className=" text-7xl text-orange-600 z-20"
-        />
-        <h2 className="uppercase font-bold text-7xl text-white z-20 text-center leading-tight">
-          {headerData[slide].title_one} <br /> {headerData[slide].title_two}
-        </h2>
-        <button className="uppercase text-white bg-orange-600 py-4 px-14 duration-500 hover:text-black relative before:absolute before:-bottom-1 before:left-1/2 before:w-0 before:h-2 before:bg-black before:duration-500 before:ease-out before:hover:left-1/4 before:hover:w-1/2">
-          {headerData[slide].button}
-        </button>
+      <div className={isShow ? "animate-appering" : ""}>
+        <div className="content absolute top-1/3 left-1/3 z-20 flex flex-col items-center gap-8">
+          <FontAwesomeIcon
+            icon={headerData[slide].icon}
+            className=" text-7xl text-orange-600 z-20"
+          />
+          <h2 className="uppercase font-bold text-7xl text-white z-20 text-center leading-tight">
+            {headerData[slide].title_one} <br /> {headerData[slide].title_two}
+          </h2>
+          <button className="uppercase text-white bg-orange-600 py-4 px-14 duration-500 hover:text-black relative before:absolute before:-bottom-1 before:left-1/2 before:w-0 before:h-2 before:bg-black before:duration-500 before:ease-out before:hover:left-1/4 before:hover:w-1/2">
+            {headerData[slide].button}
+          </button>
+        </div>
       </div>
 
       <div className="buttons text-4xl">
