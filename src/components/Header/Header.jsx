@@ -1,24 +1,29 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { headerData, headerArrowIcons } from "../../Helpers/WebsiteData";
+import { useEffect } from "react";
 const Header = () => {
   const [slide, setSlide] = useState(0);
 
-  // let slideCounter = 0;
-
-  // useEffect(() => {
-  //   setSlide(slideCounter);
-  // }, [slideCounter]);
-
   const leftArrowHandler = () => {
-    if (slide >= 0 && slide <= headerData.length)
-      setSlide((prevState) => --prevState);
+    if (slide - 1 >= 0) setSlide((prevState) => --prevState);
   };
 
   const rightArrowHandler = () => {
-    if (slide >= 0 && slide <= headerData.length)
-      setSlide((prevState) => ++prevState);
+    if (slide + 1 < headerData.length) setSlide((prevState) => ++prevState);
   };
+
+  // To change the content from time to time.
+  useEffect(() => {
+    const slideTimer = setTimeout(() => {
+      if (slide - 1 >= 0) setSlide((prevState) => --prevState);
+      if (slide + 1 < headerData.length) setSlide((prevState) => ++prevState);
+    }, 5000);
+
+    return () => {
+      clearTimeout(slideTimer);
+    };
+  }, [slide]);
 
   return (
     <div className="header">
