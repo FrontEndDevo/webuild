@@ -113,7 +113,7 @@ const headerData = [
   },
   {
     img: header,
-    icon: faPalette,
+    icon: faScrewdriverWrench,
     title_one: "We are trusted for ",
     title_two: "your project",
     button: "Contact us",

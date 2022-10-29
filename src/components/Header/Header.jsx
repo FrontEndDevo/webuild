@@ -4,7 +4,7 @@ import { headerData, headerArrowIcons } from "../../Helpers/WebsiteData";
 const Header = () => {
   const [slide, setSlide] = useState(0);
 
-  let slideCounter = 1;
+  let slideCounter = 0;
 
   useEffect(() => {
     setSlide(slideCounter);
@@ -20,19 +20,19 @@ const Header = () => {
 
   return (
     <div className="header">
-      {/* {headerSections} */}
       <div className="overlay relative">
         <img
           src={headerData[slide].img}
           alt={headerData[slide].title_one + headerData[slide].title_two}
+          className="w-full h-screen"
         />
         <span className="absolute w-full h-full bg-gray-900 opacity-80 top-0 left-0 z-10"></span>
       </div>
 
-      <div className="content absolute top-1/2 left-1/3 z-20 flex flex-col items-center gap-8">
+      <div className="content absolute top-1/3 left-1/3 z-20 flex flex-col items-center gap-8">
         <FontAwesomeIcon
           icon={headerData[slide].icon}
-          className=" text-6xl text-orange-600 z-20"
+          className=" text-7xl text-orange-600 z-20"
         />
         <h2 className="uppercase font-bold text-7xl text-white z-20 text-center leading-tight">
           {headerData[slide].title_one} <br /> {headerData[slide].title_two}
@@ -42,7 +42,7 @@ const Header = () => {
         </button>
       </div>
 
-      <div className="buttons">
+      <div className="buttons text-4xl">
         <button
           onClick={leftArrowHandler}
           className="p-8 text-gray-600 duration-300 hover:text-white absolute top-1/2 left-0 z-20 mx-24"
