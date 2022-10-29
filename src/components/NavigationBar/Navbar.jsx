@@ -9,7 +9,7 @@ const Navbar = () => {
     navLink.isActive ? "text-orange-500" : "hover:text-orange-500 duration-300";
 
   return (
-    <div className="flex z-20 bg-gray-900 justify-between items-center py-4 text-white uppercase sticky top-0 w-full px-14">
+    <div className="flex z-50 bg-gray-900 justify-between items-center py-4 text-white uppercase sticky top-0 w-full px-14">
       <div className="flex text-6xl gap-2">
         <FontAwesomeIcon icon={faBuilding} className="text-orange-700" />
         <h1 className="font-bold">webuild</h1>
