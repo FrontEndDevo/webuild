@@ -23,6 +23,8 @@ import {
   faScrewdriverWrench,
   faPalette,
   faPaintBrush,
+  faChevronRight,
+  faChevronLeft,
 } from "@fortawesome/free-solid-svg-icons";
 
 // Workers component images:
@@ -118,4 +120,6 @@ const headerData = [
   },
 ];
 
-export { headerData };
+const headerArrowIcons = [faChevronLeft, faChevronRight];
+
+export { headerData, headerArrowIcons };
