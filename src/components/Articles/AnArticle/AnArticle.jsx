@@ -11,7 +11,7 @@ const AnArticle = (props) => {
         </div>
         <div className="published-date">
           <FontAwesomeIcon icon={props.icons[0]} />
-          <p>{props.date}</p>
+          <p>{props.author.date}</p>
         </div>
       </div>
       <h2>{props.title}</h2>

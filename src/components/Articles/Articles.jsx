@@ -12,7 +12,7 @@ const Articles = () => {
   ));
 
   return (
-    <div className="articles">
+    <div className="articles m-12">
       <h2 className="text-center mb-14 text-5xl uppercase font-bold leading-tight">
         Latest
         <span className="text-orange-600"> articles </span>
