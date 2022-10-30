@@ -1,6 +1,9 @@
 import { mainArticles } from "../../Helpers/WebsiteData";
 
 const Articles = () => {
+
+  // const allArticles = mainArticles.map()
+
   return (
     <div className="articles bg-gray-600">
       <h2 className="text-center mb-14 text-5xl uppercase font-bold leading-tight">

@@ -21,7 +21,6 @@ import articleThree from "../assets/images/articlethree.jpg";
 import authorOne from "../assets/images/user.jpg";
 
 // Importing all app icons here ->
-// Service component images:
 import {
   faBuildingUser,
   faHouseChimney,
@@ -31,6 +30,8 @@ import {
   faPaintBrush,
   faChevronRight,
   faChevronLeft,
+  faArrowRight,
+  faCalendarDays,
 } from "@fortawesome/free-solid-svg-icons";
 
 // Workers component images:
@@ -144,4 +145,6 @@ const mainArticles = [
   },
 ]; // (((Articles component)))
 
-export { mainArticles }; // (((Articles component)))
+const articlesIcons = [faCalendarDays, faArrowRight]; // (((Articles component)))
+
+export { mainArticles, articlesIcons }; // (((Articles component)))
