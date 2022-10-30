@@ -4,6 +4,7 @@ import Service from "../Service/Service";
 import CallBack from "../CallBack/CallBack";
 import Workers from "../Workers/Workers";
 import Header from "../Header/Header";
+import Articles from "../Articles/Articles";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Service />
       <CallBack />
       <Workers />
+      <Articles />
     </Fragment>
   );
 };

@@ -6,16 +6,21 @@ const Header = () => {
   const [isShow, setIsShow] = useState(false);
 
   const leftArrowHandler = () => {
-    if (slide - 1 >= 0) setSlide((prevState) => --prevState);
-    setIsShow(true);
+    if (slide - 1 >= 0) {
+      setSlide((prevState) => --prevState);
+      setIsShow(true);
+    }
+
     setTimeout(() => {
       setIsShow(false);
     }, 500);
   };
 
   const rightArrowHandler = () => {
-    if (slide + 1 < headerData.length) setSlide((prevState) => ++prevState);
-    setIsShow(true);
+    if (slide + 1 < headerData.length) {
+      setSlide((prevState) => ++prevState);
+      setIsShow(true);
+    }
     setTimeout(() => {
       setIsShow(false);
     }, 500);
@@ -39,7 +44,7 @@ const Header = () => {
         <img
           src={headerData[slide].img}
           alt={headerData[slide].title_one + headerData[slide].title_two}
-          className="w-full h-screen"
+          className="w-full h-screen object-cover"
         />
         <span className="absolute w-full h-full bg-gray-900 opacity-80 top-0 left-0 z-10"></span>
       </div>
