@@ -14,6 +14,12 @@ import WorkerTwo from "../assets/images/workertwo.jpg";
 // Header component images:
 import header from "../assets/images/header.jpg";
 
+// Articles component images:
+import articleOne from "../assets/images/articleone.jpg";
+import articleTwo from "../assets/images/articletwo.jpg";
+import articleThree from "../assets/images/articlethree.jpg";
+import authorOne from "../assets/images/user.jpg";
+
 // Importing all app icons here ->
 // Service component images:
 import {
@@ -118,8 +124,24 @@ const headerData = [
     title_two: "your project",
     button: "Contact us",
   },
-];
+]; // (((Header component)))
 
-const headerArrowIcons = [faChevronLeft, faChevronRight];
+const headerArrowIcons = [faChevronLeft, faChevronRight]; // (((Header component)))
 
-export { headerData, headerArrowIcons };
+export { headerData, headerArrowIcons }; // (((Header component)))
+
+///////////////////////////////////////////////////////////////////////
+
+const mainArticles = [
+  {
+    img: articleOne,
+    author: {
+      photo: authorOne,
+      name: "Jhon Doe",
+      date: "01 Jan, 2022",
+    },
+    title: "REBUM DIAM CLITA LOREM ERAT MAGNA EST ERAT",
+  },
+]; // (((Articles component)))
+
+export { mainArticles }; // (((Articles component)))

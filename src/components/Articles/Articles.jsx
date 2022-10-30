@@ -1,4 +1,4 @@
-import React from "react";
+import { mainArticles } from "../../Helpers/WebsiteData";
 
 const Articles = () => {
   return (
