@@ -143,6 +143,24 @@ const mainArticles = [
     },
     title: "REBUM DIAM CLITA LOREM ERAT MAGNA EST ERAT",
   },
+  {
+    img: articleOne,
+    author: {
+      photo: authorOne,
+      name: "Jhon Doe",
+      date: "01 Jan, 2022",
+    },
+    title: "REBUM DIAM CLITA LOREM ERAT MAGNA EST ERAT",
+  },
+  {
+    img: articleOne,
+    author: {
+      photo: authorOne,
+      name: "Jhon Doe",
+      date: "01 Jan, 2022",
+    },
+    title: "REBUM DIAM CLITA LOREM ERAT MAGNA EST ERAT",
+  },
 ]; // (((Articles component)))
 
 const articlesIcons = [faCalendarDays, faArrowRight]; // (((Articles component)))
