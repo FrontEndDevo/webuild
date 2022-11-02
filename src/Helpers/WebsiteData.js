@@ -144,7 +144,7 @@ const mainArticles = [
     title: "REBUM DIAM CLITA LOREM ERAT MAGNA EST ERAT",
   },
   {
-    img: articleOne,
+    img: articleTwo,
     author: {
       photo: authorOne,
       name: "Jhon Doe",
@@ -153,7 +153,7 @@ const mainArticles = [
     title: "REBUM DIAM CLITA LOREM ERAT MAGNA EST ERAT",
   },
   {
-    img: articleOne,
+    img: articleThree,
     author: {
       photo: authorOne,
       name: "Jhon Doe",
