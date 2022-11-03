@@ -20,6 +20,11 @@ import articleTwo from "../assets/images/articletwo.jpg";
 import articleThree from "../assets/images/articlethree.jpg";
 import authorOne from "../assets/images/user.jpg";
 
+// Projects component images:
+import projectOne from "../assets/images/projectone.jpg";
+import projectTwo from "../assets/images/projecttwo.jpg";
+import projectThree from "../assets/images/projectthree.jpg";
+
 // Importing all app icons here ->
 import {
   faBuildingUser,
@@ -166,3 +171,55 @@ const mainArticles = [
 const articlesIcons = [faCalendarDays, faArrowRight]; // (((Articles component)))
 
 export { mainArticles, articlesIcons }; // (((Articles component)))
+
+///////////////////////////////////////////////////////////////////////
+
+const miniProjects = [
+  {
+    img: fourthService,
+    title: "All",
+  },
+  {
+    img: projectOne,
+    title: "Construction",
+  },
+  {
+    img: firstService,
+    title: "Renovation",
+  },
+];
+
+const bigProjects = [
+  {
+    img: fourthService,
+    title: "Project Name",
+    address: "123 Street, New York, USA",
+  },
+  {
+    img: projectOne,
+    title: "Project Name",
+    address: "123 Street, New York, USA",
+  },
+  {
+    img: firstService,
+    title: "Project Name",
+    address: "123 Street, New York, USA",
+  },
+  {
+    img: projectThree,
+    title: "Project Name",
+    address: "123 Street, New York, USA",
+  },
+  {
+    img: fifthService,
+    title: "Project Name",
+    address: "123 Street, New York, USA",
+  },
+  {
+    img: projectTwo,
+    title: "Project Name",
+    address: "123 Street, New York, USA",
+  },
+];
+
+export { miniProjects, bigProjects };
