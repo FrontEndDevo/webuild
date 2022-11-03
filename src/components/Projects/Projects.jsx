@@ -1,11 +1,16 @@
-import { Link } from "react-router-dom";
-import { miniProjects } from "../../Helpers/WebsiteData";
+import { miniProjects, bigProjects } from "../../Helpers/WebsiteData";
+import BigProject from "./BigProject/BigProject";
 import MiniProject from "./MiniProject/MiniProject";
 
 const Projects = () => {
   // Render all Mini Projects
   const allMini = miniProjects.map((mini) => (
     <MiniProject img={mini.img} title={mini.title} />
+  ));
+
+  // Render all Big Projects
+  const allBig = bigProjects.map((big) => (
+    <BigProject img={big.img} title={big.title} address={big.address} />
   ));
 
   return (
@@ -16,18 +21,7 @@ const Projects = () => {
         <br /> dream projects
       </h2>
       <div className="mini-projects">{allMini}</div>
-      <div className="big-projects">
-        <div className="project">
-          <img src="" alt="" />
-          <Link to="/" className="details">
-            <h3>Project name</h3>
-            <div className="address">
-              <i></i>
-              <span>123 Street, New York, USA</span>
-            </div>
-          </Link>
-        </div>
-      </div>
+      <div className="big-projects">{allBig}</div>
     </div>
   );
 };
