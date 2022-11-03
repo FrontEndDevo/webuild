@@ -14,13 +14,15 @@ const Projects = () => {
   ));
 
   return (
-    <div className="bg-gray-100">
+    <div className="bg-gray-100 px-12 py-24">
       <h2 className="text-center mb-14 text-5xl uppercase font-bold leading-tight">
         Some of our
         <span className="text-orange-600"> popular </span>
         <br /> dream projects
       </h2>
-      <div className="mini-projects">{allMini}</div>
+      <div className="mini-projects flex mx-auto gap-6 bg-gray-200 w-fit py-4 px-24">
+        {allMini}
+      </div>
       <div className="big-projects">{allBig}</div>
     </div>
   );
