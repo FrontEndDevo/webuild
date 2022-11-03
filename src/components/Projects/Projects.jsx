@@ -1,7 +1,13 @@
-import React from "react";
 import { Link } from "react-router-dom";
+import { miniProjects } from "../../Helpers/WebsiteData";
+import MiniProject from "./MiniProject/MiniProject";
 
 const Projects = () => {
+  // Render all Mini Projects
+  const allMini = miniProjects.map((mini) => (
+    <MiniProject img={mini.img} title={mini.title} />
+  ));
+
   return (
     <div className="bg-gray-100">
       <h2 className="text-center mb-14 text-5xl uppercase font-bold leading-tight">
@@ -9,12 +15,7 @@ const Projects = () => {
         <span className="text-orange-600"> popular </span>
         <br /> dream projects
       </h2>
-      <div className="mini-projects">
-        <div className="mini">
-          <img src="" alt="" />
-          <span></span>
-        </div>
-      </div>
+      <div className="mini-projects">{allMini}</div>
       <div className="big-projects">
         <div className="project">
           <img src="" alt="" />

@@ -187,7 +187,7 @@ const miniProjects = [
     img: firstService,
     title: "Renovation",
   },
-];
+]; // (((Projects component)))
 
 const bigProjects = [
   {
@@ -220,6 +220,6 @@ const bigProjects = [
     title: "Project Name",
     address: "123 Street, New York, USA",
   },
-];
+]; // (((Projects component)))
 
-export { miniProjects, bigProjects };
+export { miniProjects, bigProjects }; // (((Projects component)))
