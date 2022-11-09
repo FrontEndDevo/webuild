@@ -23,7 +23,7 @@ const Projects = () => {
       <div className="mini-projects flex mx-auto gap-6 bg-gray-200 w-fit py-4 px-24">
         {allMini}
       </div>
-      <div className="big-projects">{allBig}</div>
+      <div className="big-projects grid grid-cols-3 gap-12">{allBig}</div>
     </div>
   );
 };
