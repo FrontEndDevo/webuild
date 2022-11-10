@@ -14,7 +14,7 @@ const Footer = () => {
   const allLinks = (
     <ul>
       {ourLinks.map((link) => (
-        <SingleLink link={link} />
+        <SingleLink link={link} icon={footerIcons.faAngleRight}/>
       ))}
     </ul>
   );
@@ -51,23 +51,24 @@ const Footer = () => {
           </div>
           <div className="social flex gap-2">
             <FontAwesomeIcon
-              className="bg-orange-600 p-3 text-2xl"
+              className="cursor-pointer bg-orange-600 p-3 text-2xl duration-300 hover:text-black"
               icon={footerIcons.faTwitter}
             />
             <FontAwesomeIcon
-              className="bg-orange-600 p-3 text-2xl"
+              className="cursor-pointer bg-orange-600 p-3 text-2xl duration-300 hover:text-black"
               icon={footerIcons.faFacebook}
             />
             <FontAwesomeIcon
-              className="bg-orange-600 p-3 text-2xl"
+              className="cursor-pointer bg-orange-600 p-3 text-2xl duration-300 hover:text-black"
               icon={footerIcons.faLinkedin}
             />
             <FontAwesomeIcon
-              className="bg-orange-600 p-3 text-2xl"
+              className="cursor-pointer bg-orange-600 p-3 text-2xl duration-300 hover:text-black"
               icon={footerIcons.faInstagram}
             />
           </div>
         </div>
+
         <div className="L-H-S flex flex-col justify-center items-center gap-12 flex-1">
           <div className="up-level flex gap-52">
             <div className="left-side">

@@ -41,6 +41,7 @@ import {
   faLocationDot,
   faPhone,
   faEnvelope,
+  faAngleRight,
 } from "@fortawesome/free-solid-svg-icons";
 
 // Workers component images:
@@ -235,6 +236,7 @@ export const footerIcons = {
   faLocationDot,
   faPhone,
   faEnvelope,
+  faAngleRight,
   faTwitter,
   faFacebook,
   faLinkedin,
