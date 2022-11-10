@@ -3,8 +3,8 @@ import React from "react";
 
 const SingleLink = (props) => {
   return (
-    <li>
-      <FontAwesomeIcon icon={props.icon} />
+    <li className="my-2">
+      <FontAwesomeIcon icon={props.icon} className="mr-2" />
       {props.link}
     </li>
   );

@@ -12,9 +12,9 @@ const Footer = () => {
   ];
 
   const allLinks = (
-    <ul>
+    <ul className="text-gray-400">
       {ourLinks.map((link) => (
-        <SingleLink link={link} icon={footerIcons.faAngleRight}/>
+        <SingleLink link={link} icon={footerIcons.faAngleRight} />
       ))}
     </ul>
   );
@@ -30,7 +30,7 @@ const Footer = () => {
             />
             <h1 className="font-bold uppercase ml-4">webuild</h1>
           </div>
-          <p className="text-gray-500">
+          <p className="text-gray-400">
             Aliquyam sed elitr elitr erat sed diam ipsum eirmod eos lorem
             nonumy. Tempor sea ipsum diam sed clita dolore eos dolores magna
             erat dolore sed stet justo et dolor.
@@ -69,14 +69,14 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="L-H-S flex flex-col justify-center items-center gap-12 flex-1">
+      <div className="L-H-S flex flex-col justify-center items-center gap-12 flex-1">
           <div className="up-level flex gap-52">
             <div className="left-side">
-              <h3 className="text-3xl uppercase mb-6">Quick links</h3>
+              <h3 className="text-2xl uppercase mb-6 font-bold">Quick links</h3>
               {allLinks}
             </div>
             <div className="right-side">
-              <h3 className="text-3xl uppercase mb-6">Popular links</h3>
+              <h3 className="text-2xl uppercase mb-6 font-bold">Popular links</h3>
               {allLinks}
             </div>
           </div>
