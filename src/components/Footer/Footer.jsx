@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { footerIcons } from "../../Helpers/WebsiteData";
-import SingleLink from "./Links/SingleLink";
+import SingleLink from "./SingleLink/SingleLink";
 
 const Footer = () => {
   const ourLinks = [
@@ -21,7 +21,7 @@ const Footer = () => {
 
   return (
     <div className="footer bg-gray-900 text-white">
-      <div className="top-side px-12 py-24 flex">
+      <div className="top-side px-12 py-24 flex gap-32">
         <div className="R-H-S flex-1 flex flex-col gap-6 justify-center">
           <div className="flex text-6xl gap-2">
             <FontAwesomeIcon
@@ -69,22 +69,36 @@ const Footer = () => {
           </div>
         </div>
 
-      <div className="L-H-S flex flex-col justify-center items-center gap-12 flex-1">
-          <div className="up-level flex gap-52">
-            <div className="left-side">
+        <div className="L-H-S flex flex-col justify-center items-center gap-12 flex-1">
+          <div className="up-level flex items-center w-full">
+            <div className="left-side flex-1">
               <h3 className="text-2xl uppercase mb-6 font-bold">Quick links</h3>
               {allLinks}
             </div>
-            <div className="right-side">
-              <h3 className="text-2xl uppercase mb-6 font-bold">Popular links</h3>
+            <div className="right-side flex-1">
+              <h3 className="text-2xl uppercase mb-6 font-bold">
+                Popular links
+              </h3>
               {allLinks}
             </div>
           </div>
-          <div className="down-level">
-            <form>
-              <label htmlFor="email">Newsletter</label>
-              <input type="email" id="email" />
-              <button>Sign up</button>
+          <div className="down-level w-full">
+            <form className="flex flex-col gap-6">
+              <div>
+                <label htmlFor="email" className="font-bold text-2xl uppercase">
+                  Newsletter
+                </label>
+              </div>
+              <div>
+                <input
+                  type="email"
+                  id="email"
+                  className="w-4/5 px-8 py-4 text-gray-600 focus:outline-orange-500"
+                />
+                <button className="px-8 py-4 bg-orange-600 text-white uppercase">
+                  Sign up
+                </button>
+              </div>
             </form>
           </div>
         </div>
