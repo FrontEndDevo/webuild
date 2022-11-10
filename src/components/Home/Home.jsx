@@ -6,6 +6,7 @@ import Workers from "../Workers/Workers";
 import Header from "../Header/Header";
 import Articles from "../Articles/Articles";
 import Projects from "../Projects/Projects";
+import Footer from "../Footer/Footer";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <Projects />
       <Workers />
       <Articles />
+      <Footer />
     </Fragment>
   );
 };
