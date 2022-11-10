@@ -1,11 +1,28 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { footerIcons } from "../../Helpers/WebsiteData";
+import SingleLink from "./Links/SingleLink";
 
 const Footer = () => {
+  const ourLinks = [
+    "Home",
+    "About Us",
+    "Our Service",
+    "Meet The Team",
+    "Contact Us",
+  ];
+
+  const allLinks = (
+    <ul>
+      {ourLinks.map((link) => (
+        <SingleLink link={link} />
+      ))}
+    </ul>
+  );
+
   return (
     <div className="footer bg-gray-900 text-white">
       <div className="top-side px-12 py-24 flex">
-        <div className="R-H-S flex-1 flex flex-col gap-6">
+        <div className="R-H-S flex-1 flex flex-col gap-6 justify-center">
           <div className="flex text-6xl gap-2">
             <FontAwesomeIcon
               icon={footerIcons.faBuilding}
@@ -33,33 +50,33 @@ const Footer = () => {
             </div>
           </div>
           <div className="social flex gap-2">
-            <FontAwesomeIcon className="bg-orange-600 p-3 text-2xl" icon={footerIcons.faTwitter} />
-            <FontAwesomeIcon className="bg-orange-600 p-3 text-2xl" icon={footerIcons.faFacebook} />
-            <FontAwesomeIcon className="bg-orange-600 p-3 text-2xl" icon={footerIcons.faLinkedin} />
-            <FontAwesomeIcon className="bg-orange-600 p-3 text-2xl" icon={footerIcons.faInstagram} />
+            <FontAwesomeIcon
+              className="bg-orange-600 p-3 text-2xl"
+              icon={footerIcons.faTwitter}
+            />
+            <FontAwesomeIcon
+              className="bg-orange-600 p-3 text-2xl"
+              icon={footerIcons.faFacebook}
+            />
+            <FontAwesomeIcon
+              className="bg-orange-600 p-3 text-2xl"
+              icon={footerIcons.faLinkedin}
+            />
+            <FontAwesomeIcon
+              className="bg-orange-600 p-3 text-2xl"
+              icon={footerIcons.faInstagram}
+            />
           </div>
         </div>
-        <div className="L-H-S flex justify-around flex-1">
-          <div className="up-level">
+        <div className="L-H-S flex flex-col justify-center items-center gap-12 flex-1">
+          <div className="up-level flex gap-52">
             <div className="left-side">
-              <h3>Quick links</h3>
-              <ul>
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Our Service</li>
-                <li>Meet The Team</li>
-                <li>Contact Us</li>
-              </ul>
+              <h3 className="text-3xl uppercase mb-6">Quick links</h3>
+              {allLinks}
             </div>
             <div className="right-side">
-              <h3>Popular links</h3>
-              <ul>
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Our Service</li>
-                <li>Meet The Team</li>
-                <li>Contact Us</li>
-              </ul>
+              <h3 className="text-3xl uppercase mb-6">Popular links</h3>
+              {allLinks}
             </div>
           </div>
           <div className="down-level">
