@@ -69,6 +69,8 @@ const Footer = () => {
           </div>
         </div>
 
+        <div className="border border-orange-500"></div>
+
         <div className="L-H-S flex flex-col justify-center items-center gap-12 flex-1">
           <div className="up-level flex items-center w-full">
             <div className="left-side flex-1">
@@ -103,12 +105,13 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bottom-side">
-        <p>
-          &copy; <span> We Build.</span>All Rights Reserved.
+      <div className="bottom-side flex justify-between items-center text-lg border-t border-orange-500">
+        <p className="px-12">
+          &copy; <span className="text-orange-600"> We Build.</span>All Rights
+          Reserved.
         </p>
-        <p>
-          <span>Designed by</span> FrontEndDevo
+        <p className="text-black overflow-hidden bg-orange-600 px-20 py-4 relative before:absolute before:w-full before:h-full before:bg-gray-900 before:rotate-45 before:top-0 before:-left-48">
+          <span className="text-white">Designed by</span> FrontEndDevo
         </p>
       </div>
     </div>
