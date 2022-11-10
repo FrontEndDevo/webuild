@@ -37,6 +37,10 @@ import {
   faChevronLeft,
   faArrowRight,
   faCalendarDays,
+  faBuilding,
+  faLocationDot,
+  faPhone,
+  faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 
 // Workers component images:
@@ -223,3 +227,16 @@ const bigProjects = [
 ]; // (((Projects component)))
 
 export { miniProjects, bigProjects }; // (((Projects component)))
+
+///////////////////////////////////////////////////////////////////////
+
+export const footerIcons = {
+  faBuilding,
+  faLocationDot,
+  faPhone,
+  faEnvelope,
+  faTwitter,
+  faFacebook,
+  faLinkedin,
+  faInstagram,
+}; // (((Footer component)))
