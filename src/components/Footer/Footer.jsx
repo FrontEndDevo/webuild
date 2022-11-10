@@ -3,9 +3,9 @@ import { footerIcons } from "../../Helpers/WebsiteData";
 
 const Footer = () => {
   return (
-    <div className="footer">
-      <div className="top-side">
-        <div className="R-H-S">
+    <div className="footer bg-gray-900 text-white">
+      <div className="top-side px-12 py-24 flex">
+        <div className="R-H-S flex-1">
           <div className="flex text-6xl gap-2">
             <FontAwesomeIcon
               icon={footerIcons.faBuilding}
@@ -39,7 +39,7 @@ const Footer = () => {
             <FontAwesomeIcon icon={footerIcons.faInstagram} />
           </div>
         </div>
-        <div className="L-H-S">
+        <div className="L-H-S flex justify-around flex-1">
           <div className="up-level">
             <div className="left-side">
               <h3>Quick links</h3>
