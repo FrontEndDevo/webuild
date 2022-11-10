@@ -5,38 +5,38 @@ const Footer = () => {
   return (
     <div className="footer bg-gray-900 text-white">
       <div className="top-side px-12 py-24 flex">
-        <div className="R-H-S flex-1">
+        <div className="R-H-S flex-1 flex flex-col gap-6">
           <div className="flex text-6xl gap-2">
             <FontAwesomeIcon
               icon={footerIcons.faBuilding}
               className="text-orange-700"
             />
-            <h1 className="font-bold">webuild</h1>
+            <h1 className="font-bold uppercase ml-4">webuild</h1>
           </div>
-          <p>
+          <p className="text-gray-500">
             Aliquyam sed elitr elitr erat sed diam ipsum eirmod eos lorem
             nonumy. Tempor sea ipsum diam sed clita dolore eos dolores magna
             erat dolore sed stet justo et dolor.
           </p>
-          <div className="contact">
-            <div className="info">
+          <div className="contact flex flex-col gap-4">
+            <div className="info flex gap-2 text-gray-500">
               <FontAwesomeIcon icon={footerIcons.faLocationDot} />
               <p>123 Street, New York, USA</p>
             </div>
-            <div className="info">
+            <div className="info flex gap-2 text-gray-500">
               <FontAwesomeIcon icon={footerIcons.faPhone} />
               <p>+012 345 67890</p>
             </div>
-            <div className="info">
+            <div className="info flex gap-2 text-gray-500">
               <FontAwesomeIcon icon={footerIcons.faEnvelope} />
               <p>info@example.com</p>
             </div>
           </div>
-          <div className="social">
-            <FontAwesomeIcon icon={footerIcons.faTwitter} />
-            <FontAwesomeIcon icon={footerIcons.faFacebook} />
-            <FontAwesomeIcon icon={footerIcons.faLinkedin} />
-            <FontAwesomeIcon icon={footerIcons.faInstagram} />
+          <div className="social flex gap-2">
+            <FontAwesomeIcon className="bg-orange-600 p-3 text-2xl" icon={footerIcons.faTwitter} />
+            <FontAwesomeIcon className="bg-orange-600 p-3 text-2xl" icon={footerIcons.faFacebook} />
+            <FontAwesomeIcon className="bg-orange-600 p-3 text-2xl" icon={footerIcons.faLinkedin} />
+            <FontAwesomeIcon className="bg-orange-600 p-3 text-2xl" icon={footerIcons.faInstagram} />
           </div>
         </div>
         <div className="L-H-S flex justify-around flex-1">
