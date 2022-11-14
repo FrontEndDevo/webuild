@@ -1,5 +1,4 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 const Clients = () => {
   return (
     <div className="clients text-center bg-gray-200 py-24">

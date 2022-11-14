@@ -25,6 +25,11 @@ import projectOne from "../assets/images/projectone.jpg";
 import projectTwo from "../assets/images/projecttwo.jpg";
 import projectThree from "../assets/images/projectthree.jpg";
 
+// Clients component images:
+import clientOne from "../assets/images/client-one.jpg";
+import clientTwo from "../assets/images/client-two.jpg";
+import clientThree from "../assets/images/client-three.jpg";
+
 // Importing all app icons here ->
 import {
   faBuildingUser,
@@ -42,6 +47,7 @@ import {
   faPhone,
   faEnvelope,
   faAngleRight,
+  faQuoteLeft,
 } from "@fortawesome/free-solid-svg-icons";
 
 // Workers component images:
@@ -242,3 +248,9 @@ export const footerIcons = {
   faLinkedin,
   faInstagram,
 }; // (((Footer component)))
+
+///////////////////////////////////////////////////////////////////////
+export const clientsData = {
+  images: [clientOne, clientTwo, clientThree],
+  icons: [faQuoteLeft],
+};  // (((Clients component)))
