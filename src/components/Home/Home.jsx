@@ -7,6 +7,7 @@ import Header from "../Header/Header";
 import Articles from "../Articles/Articles";
 import Projects from "../Projects/Projects";
 import Footer from "../Footer/Footer";
+import Cleints from "../Cleints/Cleints";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <CallBack />
       <Projects />
       <Workers />
+      <Cleints />
       <Articles />
       <Footer />
     </Fragment>
