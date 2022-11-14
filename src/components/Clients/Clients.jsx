@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Cleints = () => {
+const Clients = () => {
   return (
     <div className="clients text-center bg-gray-200 py-24">
       <h3 className="uppercase text-5xl font-bold">
@@ -29,4 +29,4 @@ const Cleints = () => {
   );
 };
 
-export default Cleints;
+export default Clients;
