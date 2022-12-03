@@ -2,7 +2,7 @@
 
 Demo Link: https://frontenddevo.github.io/webuild/
 
-Project Description: Simply this is a website app to order healthy food from the most famous restaurants in the world. You can simply see our latest meals and choose what you want. The food will be prepared for you and delivered to you as soon as possible to enjoy a delicious and cheap lunch or dinner.
+Project Description: Want to build your own building? Afraid of rising resource prices? Urgent and want to finish as soon as possible? You will find all the solutions to your problems with us. We are WEBUILD company that works in construction with the best resources and the lowest prices with completion as soon as possible. We have engineers and workers in addition to modern and fast equipments. What are you waiting for? Contact us now to start working together.
 
 Technologies Used: Reactjs && TailwindCSS.
 
