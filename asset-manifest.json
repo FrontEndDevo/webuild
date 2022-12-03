@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/webuild/static/css/main.b3b249f1.css",
+    "main.js": "/webuild/static/js/main.6b277b04.js",
+    "static/media/projectthree.jpg": "/webuild/static/media/projectthree.8189ae689b09a4c3c0e6.jpg",
+    "static/media/header.jpg": "/webuild/static/media/header.5be4906569b7cfe6130a.jpg",
+    "static/media/projectone.jpg": "/webuild/static/media/projectone.a874184e4660db776cb9.jpg",
+    "static/media/articleone.jpg": "/webuild/static/media/articleone.58fc397b725e0b8e379e.jpg",
+    "static/media/firstService.jpg": "/webuild/static/media/firstService.b21e8eaa179f808189c1.jpg",
+    "static/media/articlethree.jpg": "/webuild/static/media/articlethree.3ba806b00517fc94feaf.jpg",
+    "static/media/fourthService.jpg": "/webuild/static/media/fourthService.86f568c760120b79678d.jpg",
+    "static/media/projecttwo.jpg": "/webuild/static/media/projecttwo.987f8d4673759a2cb64a.jpg",
+    "static/media/articletwo.jpg": "/webuild/static/media/articletwo.2a240030cb1705ceb0aa.jpg",
+    "static/media/sixthService.jpg": "/webuild/static/media/sixthService.eb20b3c9ab33f05723e1.jpg",
+    "static/media/fifthService.jpg": "/webuild/static/media/fifthService.74b948af83b377a6fb3f.jpg",
+    "static/media/about-min.jpg": "/webuild/static/media/about-min.93b6a50ca13dff9a677c.jpg",
+    "static/media/thirdService.jpg": "/webuild/static/media/thirdService.159a27183c14628b93c2.jpg",
+    "static/media/client-one.jpg": "/webuild/static/media/client-one.e7fdc036c7e1293206ec.jpg",
+    "static/media/secondService.jpg": "/webuild/static/media/secondService.18c9cec77e8ce5fa509b.jpg",
+    "static/media/client-two.jpg": "/webuild/static/media/client-two.a89c4d30d6d9fc61fa47.jpg",
+    "static/media/workerone.jpg": "/webuild/static/media/workerone.1f9300f4ac73ad3697b6.jpg",
+    "static/media/client-three.jpg": "/webuild/static/media/client-three.7d29e088e08c5834299e.jpg",
+    "static/media/workertwo.jpg": "/webuild/static/media/workertwo.4edeeb422345788e5b58.jpg",
+    "index.html": "/webuild/index.html",
+    "main.b3b249f1.css.map": "/webuild/static/css/main.b3b249f1.css.map",
+    "main.6b277b04.js.map": "/webuild/static/js/main.6b277b04.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b3b249f1.css",
+    "static/js/main.6b277b04.js"
+  ]
+}
