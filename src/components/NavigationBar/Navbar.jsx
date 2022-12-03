@@ -16,22 +16,22 @@ const Navbar = () => {
       </div>
       <ul className="flex gap-12 text-xl mr-44">
         <li>
-          <NavLink to="/home" className={navLinkClasses}>
+          <NavLink to="/webuild/home" className={navLinkClasses}>
             home
           </NavLink>
         </li>
         <li>
-          <NavLink to="/about" className={navLinkClasses}>
+          <NavLink to="/webuild/about" className={navLinkClasses}>
             about
           </NavLink>
         </li>
         <li>
-          <NavLink to="/service" className={navLinkClasses}>
+          <NavLink to="/webuild/service" className={navLinkClasses}>
             service
           </NavLink>
         </li>
         <li>
-          <NavLink to="/contact" className={navLinkClasses}>
+          <NavLink to="/webuild/contact" className={navLinkClasses}>
             contact
           </NavLink>
         </li>
