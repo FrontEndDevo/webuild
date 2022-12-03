@@ -1,9 +1,7 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import "./App.css";
-import About from "./components/About/About";
 import Home from "./components/Home/Home";
 import Navbar from "./components/NavigationBar/Navbar";
-import Service from "./components/Service/Service";
 
 const App = () => {
   return (
@@ -12,8 +10,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Navigate to="/home" />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/service" element={<Service />} />
+        <Route path="/about" element={<Navigate to="/home" />} />
+        <Route path="/service" element={<Navigate to="/home" />} />
       </Routes>
     </div>
   );
