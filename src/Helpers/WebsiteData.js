@@ -251,6 +251,8 @@ export const footerIcons = {
 
 ///////////////////////////////////////////////////////////////////////
 export const clientsData = {
-  images: [clientOne, clientTwo, clientThree],
-  icons: [faQuoteLeft],
-};  // (((Clients component)))
+  clientOne,
+  clientTwo,
+  clientThree,
+  faQuoteLeft,
+}; // (((Clients component)))
